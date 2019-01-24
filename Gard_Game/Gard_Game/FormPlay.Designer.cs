@@ -1,6 +1,6 @@
 ﻿namespace Gard_Game
 {
-    partial class Form1
+    partial class FormPlay
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -134,6 +134,7 @@
             this.E10 = new System.Windows.Forms.PictureBox();
             this.D10 = new System.Windows.Forms.PictureBox();
             this.C10 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.C1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.D1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.E1)).BeginInit();
@@ -1187,11 +1188,22 @@
             this.C10.TabIndex = 97;
             this.C10.TabStop = false;
             // 
-            // Form1
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(843, 542);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(99, 44);
+            this.button1.TabIndex = 107;
+            this.button1.Text = "EXIT";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.buttonExit_Game);
+            // 
+            // FormPlay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 611);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.I10);
             this.Controls.Add(this.H10);
             this.Controls.Add(this.G10);
@@ -1298,7 +1310,8 @@
             this.Controls.Add(this.textBoxFirst);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "FormPlay";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Морской бой - Игра";
             ((System.ComponentModel.ISupportInitialize)(this.C1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.D1)).EndInit();
@@ -1513,6 +1526,7 @@
         private System.Windows.Forms.PictureBox E10;
         private System.Windows.Forms.PictureBox D10;
         private System.Windows.Forms.PictureBox C10;
+        private System.Windows.Forms.Button button1;
     }
 }
 

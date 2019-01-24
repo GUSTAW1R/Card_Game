@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace Gard_Game
 {
-    public partial class Form1 : Form
+    public partial class FormPlay : Form
     {
         public static string PB_W;
         public static int PB_H;
         public static string CoorX;
         public static string CoorY;
-        public Form1()
+        public FormPlay()
         {
             InitializeComponent();
         }
@@ -404,6 +404,11 @@ namespace Gard_Game
                     break;
             }
 
+        }
+
+        private void buttonExit_Game(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
